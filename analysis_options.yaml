@@ -45,7 +45,6 @@ linter:
     - always_require_non_null_named_parameters
     - annotate_overrides
     - avoid_annotating_with_dynamic
-    - avoid_as # required for implicit-casts: true
     - avoid_bool_literals_in_conditional_expressions
     - avoid_double_and_int_checks
     - avoid_empty_else
