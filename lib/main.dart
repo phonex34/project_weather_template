@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:weather_template/setting_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -128,10 +129,14 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(title),
-      ),
+          // Here we take the value from the MyHomePage object that was created by
+          // the App.build method, and use it to set our appbar title.
+          title: Text(title),
+          leading: IconButton(
+              icon: const Icon(Icons.settings),
+              onPressed: () {
+                Get.to(() => const SettingPage());
+              })),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
