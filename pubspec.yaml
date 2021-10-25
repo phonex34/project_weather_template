@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,11 +30,30 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  get: ^4.1.4
+  dio: ^4.0.0
+  google_fonts: ^2.0.0
+  connectivity: ^3.0.2
+  shared_preferences: ^2.0.4
+  logger: ^1.0.0-nullsafety.0
+  # multi_image_picker: ^4.8.00
+  wechat_assets_picker: ^5.4.2
+  photo_view: ^0.11.1
+  flutter_absolute_path: ^1.0.6
+  flutter_native_image: ^0.0.5
+  cached_network_image: ^3.0.0-nullsafety
+  flutter_shimmer: ^2.0.0-prerelease-nullsafety
+  pull_to_refresh: ^2.0.0
+  #get city, prefecture, address
+
+  #firebase
+  cloud_firestore: ^2.0.0
+  firebase_auth: ^1.0.1
+  firebase_core: ^1.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -51,7 +70,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
